@@ -21,15 +21,15 @@ export default function GameScreen({
   
       // 이미 참여했으면 강제 리다이렉트
       if (snap.exists()) {
-        navigate("/result"); // 또는 "/"로 보내도 됨
+        navigate("/");
       }
     };
   
     checkAccess();
-    
+
     const timer = setTimeout(() => {
       if (!imageLoaded) {
-        setImageLoaded(true); // 👈 강제 통과
+        setImageLoaded(true);
       }
     }, 1500);
   
