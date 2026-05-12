@@ -32,5 +32,6 @@ export const ko = {
     onlineTitle: "Online Mini Exhibition",
     onlineDesc:
       "현장에서 큐알코드 인식 후 모바일 기기를 통해<br />미공개 영상 및 사진을 감상하실 수 있습니다.",
+    reserve: "예약하기"
   }
 };

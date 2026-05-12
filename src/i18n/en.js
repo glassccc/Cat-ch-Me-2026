@@ -30,5 +30,6 @@ export const en = {
     onlineTitle: "Online Mini Exhibition",
     onlineDesc:
       "Scan the QR code on site to enjoy exclusive videos and photos on your mobile device",
+    reserve:"Reserve"
   }
 };
