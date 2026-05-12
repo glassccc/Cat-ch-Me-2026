@@ -68,12 +68,12 @@ button {
   color: #000;
 }
 .end-txt{
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
-  color: #bbb;
-  padding: 2rem 0 1rem 0;
-  width: 100%;
-  background: linear-gradient(transparent, #fff 50%);
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: #bbb;
+    padding: 2rem 0 1rem 0;
+    width: 100%;
+    background: linear-gradient(transparent, #fff 50%);
 }
