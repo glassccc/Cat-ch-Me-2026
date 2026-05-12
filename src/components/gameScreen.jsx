@@ -14,6 +14,19 @@ export default function GameScreen({
   const [wrongCount, setWrongCount] =
     useState(0);
   useEffect(() => {
+    const checkAccess = async () => {
+      const deviceId = getDeviceId();
+      const ref = doc(db, "players", deviceId);
+      const snap = await getDoc(ref);
+  
+      // 이미 참여했으면 강제 리다이렉트
+      if (snap.exists()) {
+        navigate("/result"); // 또는 "/"로 보내도 됨
+      }
+    };
+  
+    checkAccess();
+    
     const timer = setTimeout(() => {
       if (!imageLoaded) {
         setImageLoaded(true); // 👈 강제 통과
