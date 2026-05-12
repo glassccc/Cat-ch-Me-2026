@@ -13,21 +13,39 @@ export default function GameScreen({
   const [wrongMarks, setWrongMarks] = useState([]);
   const [wrongCount, setWrongCount] =
     useState(0);
-
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (!imageLoaded) {
+        setImageLoaded(true); // 👈 강제 통과
+      }
+    }, 1500);
+  
+    return () => clearTimeout(timer);
+  }, []);
   useEffect(() => {
     if (!imageLoaded) return;
+  
     if (timeLeft <= 0) {
       onFail();
       return;
     }
-
+  
     const timer = setTimeout(() => {
       setTimeLeft((prev) => prev - 1);
     }, 1000);
-
+  
     return () => clearTimeout(timer);
-  }, [timeLeft]);
-
+  }, [timeLeft, imageLoaded]);
+  useEffect(() => {
+    if (gameData?.src) {
+      const img = new Image();
+      img.src = gameData.src;
+  
+      img.onload = () => {
+        setImageLoaded(true);
+      };
+    }
+  }, [gameData]);
   const handleClick = (e) => {
     const rect =
       e.target.getBoundingClientRect();

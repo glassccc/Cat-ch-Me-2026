@@ -62,7 +62,7 @@ function App() {
     let isAdminOverride = false;
   
     if (alreadyPlayed) {
-      const password = prompt("관리자 비밀번호 입력");
+      const password = prompt("재도전은 관리자 승인후 가능합니다.");
   
       if (password === "0712") {
         isAdminOverride = true;
