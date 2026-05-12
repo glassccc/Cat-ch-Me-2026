@@ -58,22 +58,22 @@ function App() {
   const startGame = async () => {
     const alreadyPlayed = await checkAlreadyPlayed();
   
-    // 관리자 모드 여부 체크
-    let isAdminOverride = false;
-  
     if (alreadyPlayed) {
-      const password = prompt("재도전은 관리자 승인후 가능합니다.");
+      const password = prompt(
+        "재도전은 관리자 승인후 가능합니다."
+      );
   
-      if (password === "0712") {
-        isAdminOverride = true;
-      } else {
+      // 취소 or 비밀번호 틀림
+      if (password !== "0712") {
         alert("이미 참여하셨습니다");
         return;
       }
     }
   
     const randomGame =
-      gameImages[Math.floor(Math.random() * gameImages.length)];
+      gameImages[
+        Math.floor(Math.random() * gameImages.length)
+      ];
   
     setSelectedGame(randomGame);
   

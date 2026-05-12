@@ -134,7 +134,7 @@ export default function GameScreen({
     }
   };
   if (!imageLoaded) {
-    return <div>Loading...</div>;
+    return <div>Loading...<br/>로딩이 길면 새로고침 해주세요.</div>;
   }
   return (
     <div className="screen">
