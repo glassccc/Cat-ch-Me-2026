@@ -58,7 +58,7 @@ function App() {
   const startGame = async () => {
     const alreadyPlayed = await checkAlreadyPlayed();
   
-    // 👇 관리자 모드 여부 체크
+    // 관리자 모드 여부 체크
     let isAdminOverride = false;
   
     if (alreadyPlayed) {

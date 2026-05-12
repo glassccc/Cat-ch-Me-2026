@@ -8,7 +8,7 @@ export const ko = {
     "레터링 츄러스 or 1만원 이상 구매 시 <bold>물티슈</bold> 추가 증정",
     reservation: "레터링 츄러스는 반드시 <b>미리 예약 후 픽업만 가능</b>",
     contact:
-    "이벤트 관련 문의는 <a>@kooCATbin</a> 으로 DM 부탁드립니다",
+    "이벤트 관련 문의는 <a>@kooCATbin</a> 으로 DM 부탁드립니다.",
   },
   event: {
     titleTime: "일시",
@@ -23,7 +23,7 @@ export const ko = {
 
     catchTitle: "Catch the Koonyang",
     catchDesc:
-      "현장에 있는 큐알코드를 인식 후 나타난 이미지에서 제한 시간 내에 숨은 구냥이를 찾아보세요.<br />구냥이를 모두 잡으면 <b>츄러스 or 커피 1개 무료 제공</b>됩니다<br /><span>(1인 1회 참여제한)</span>",
+      "현장에 있는 큐알코드를 인식 후 나타난 이미지에서<br />제한 시간 내에 숨은 구냥이를 찾아보세요.<br />구냥이를 모두 잡으면 <b>츄러스 or 커피 1개 무료 제공</b>됩니다.<br /><span>(1인 1회 참여제한)</span>",
 
     hashtagTitle: "Hashtag Event",
     hashtagDesc:
@@ -31,6 +31,6 @@ export const ko = {
 
     onlineTitle: "Online Mini Exhibition",
     onlineDesc:
-      "현장에서 큐알코드 인식 후 모바일 기기를 통해<br />미공개 영상 및 사진을 감상하실 수 있습니다",
+      "현장에서 큐알코드 인식 후 모바일 기기를 통해<br />미공개 영상 및 사진을 감상하실 수 있습니다.",
   }
 };
