@@ -6,7 +6,7 @@ export default function GameScreen({
   onFail,
 }) {
   const [timeLeft, setTimeLeft] = useState(10);
-
+  const [imageLoaded, setImageLoaded] = useState(false);
   // 찾은 정답 저장
   const [found, setFound] = useState([]);
 
@@ -15,6 +15,7 @@ export default function GameScreen({
     useState(0);
 
   useEffect(() => {
+    if (!imageLoaded) return;
     if (timeLeft <= 0) {
       onFail();
       return;
@@ -100,7 +101,9 @@ export default function GameScreen({
       }
     }
   };
-
+  if (!imageLoaded) {
+    return <div>Loading...</div>;
+  }
   return (
     <div className="screen">
       <h2>{timeLeft}</h2>
@@ -116,15 +119,16 @@ export default function GameScreen({
           margin: "0 auto",
         }}
       >
-        <img
-          src={gameData.src}
-          alt=""
-          onClick={handleClick}
-          style={{
-            width: "100%",
-            display: "block",
-          }}
-        />
+      <img
+        src={gameData.src}
+        alt=""
+        onClick={handleClick}
+        onLoad={() => setImageLoaded(true)}   // 👈 핵심
+        style={{
+          width: "100%",
+          display: "block",
+        }}
+      />
 
         {/* 성공 위치 표시 */}
         {found.map((item) => (
