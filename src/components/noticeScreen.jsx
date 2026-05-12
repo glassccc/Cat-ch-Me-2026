@@ -42,6 +42,29 @@ function NoticeScreen() {
                         }}
                         />
                     </p>
+                    <p className="s-txt">
+                        <Trans
+                        i18nKey="notice.noreserve"
+                        components={{
+                            b: <b />
+                        }}
+                        />
+                    </p>
+                    <p className="reserve-btn">
+                        <Trans
+                        i18nKey="event.reserve"
+                        components={{
+                            a: (
+                            <a
+                                href="https://map.naver.com/p/search/%EC%AD%88%EB%8B%88%EB%84%A4%20%EC%B8%84%EB%9F%AC%EC%8A%A4/place/1073714383?placePath=/booking?bk_query=%EC%AD%88%EB%8B%88%EB%84%A4%20%EC%B8%84%EB%9F%AC%EC%8A%A4&fromPanelNum=2&timestamp=202605121749&locale=ko&svcName=map_pcv5&searchText=%EC%AD%88%EB%8B%88%EB%84%A4%20%EC%B8%84%EB%9F%AC%EC%8A%A4&from=map&fromPanelNum=2&timestamp=202605121414&locale=ko&svcName=map_pcv5&searchText=%EC%AD%88%EB%8B%88%EB%84%A4%20%EC%B8%84%EB%9F%AC%EC%8A%A4&entry=pll&fromNxList=true&searchType=place&c=15.00,0,0,0,dh"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={{ color: "#bbb", fontWeight: "bold" }}
+                            />
+                            ),
+                        }}
+                        />
+                    </p>
                 </div>
             </div>
 

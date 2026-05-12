@@ -50,6 +50,7 @@ button {
 .s-txt-wrap{
   padding: .5rem 0;
 }
+.reserve-btn a{color: #ff4d00 !important; text-decoration: underline; cursor: pointer;font-weight: 600;}
 .s-txt{font-size: .8rem !important}
 .s-txt::before{content: '*';}
 .sub-txt{color: #bbb;}

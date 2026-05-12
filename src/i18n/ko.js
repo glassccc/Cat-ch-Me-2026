@@ -6,7 +6,8 @@ export const ko = {
     giftSub: "모든 츄러스, 츄로도그 메뉴 주문 시 1인당 1세트 증정",
     extraGift:
     "레터링 츄러스 or 1만원 이상 구매 시 <bold>물티슈</bold> 추가 증정",
-    reservation: "레터링 츄러스는 반드시 <b>미리 예약 후 픽업만 가능</b>",
+    reservation: "<b>레터링 츄러스는 반드시 미리 예약 후 픽업만 가능</b>",
+    noreserve: "일반 츄러스 메뉴는 현장 구매 가능",
     contact:
     "이벤트 관련 문의는 <a>@kooCATbin</a> 으로 DM 부탁드립니다.",
   },
@@ -32,6 +33,6 @@ export const ko = {
     onlineTitle: "Online Mini Exhibition",
     onlineDesc:
       "현장에서 큐알코드 인식 후 모바일 기기를 통해<br />미공개 영상 및 사진을 감상하실 수 있습니다.",
-    reserve: "예약하기"
+    reserve: "<a>예약하기 ></a>"
   }
 };

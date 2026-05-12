@@ -5,7 +5,8 @@ export const en = {
     benefit: "removable stickers, label stickers",
     giftSub: "One set per person when ordering churros or churodog menu",
     extraGift: "<bold>Wet wipes</bold> for lettering churros or orders over 10,000 KRW",
-    reservation: "Lettering churros are <b>only available by reservation</b>",
+    reservation: "<b>Lettering churros are only available by reservation</b>",
+    noreserve: "Regular churros menu available for purchase on-site",
     contact: "DM <a>@kooCATbin</a> for inquiries",
   },
   event: {
@@ -30,6 +31,6 @@ export const en = {
     onlineTitle: "Online Mini Exhibition",
     onlineDesc:
       "Scan the QR code on site to enjoy exclusive videos and photos on your mobile device",
-    reserve:"Reserve"
+    reserve:"<a>Reserve ></a>"
   }
 };
