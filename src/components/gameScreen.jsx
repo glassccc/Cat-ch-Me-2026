@@ -4,8 +4,9 @@ export default function GameScreen({
   gameData,
   onSuccess,
   onFail,
+  gameTime
 }) {
-  const [timeLeft, setTimeLeft] = useState(10);
+  const [timeLeft, setTimeLeft] = useState(gameTime);
   const [imageLoaded, setImageLoaded] = useState(false);
   // 찾은 정답 저장
   const [found, setFound] = useState([]);
@@ -141,25 +142,25 @@ export default function GameScreen({
 
       <h3>{found.length}/3</h3>
 
-      {/* 이미지 영역 */}
-      <div
-        style={{
-          position: "relative",
-          width: "100%",
-          maxWidth: "500px",
-          margin: "0 auto",
-        }}
-      >
-      <img
-        src={gameData.src}
-        alt=""
-        onClick={handleClick}
-        onLoad={() => setImageLoaded(true)}   // 👈 핵심
-        style={{
-          width: "100%",
-          display: "block",
-        }}
-      />
+        {/* 이미지 영역 */}
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            maxWidth: "500px",
+            margin: "0 auto",
+          }}
+        >
+        <img
+          src={gameData.src}
+          alt=""
+          onClick={handleClick}
+          onLoad={() => setImageLoaded(true)}
+          style={{
+            width: "100%",
+            display: "block",
+          }}
+        />
 
         {/* 성공 위치 표시 */}
         {found.map((item) => (
