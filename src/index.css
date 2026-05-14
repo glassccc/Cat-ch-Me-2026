@@ -10,6 +10,7 @@ body {
   text-align: center;
   padding-bottom: 3rem;
   word-break: keep-all;
+  height: 100dvh;
 }
 .theme{
   background: #222;
@@ -122,6 +123,7 @@ button {
 .end-txt{
     position: fixed;
     bottom: 0;
+    padding-bottom: env(safe-area-inset-bottom);
     left: 50%;
     transform: translate(-50%);
     color: #bbb;

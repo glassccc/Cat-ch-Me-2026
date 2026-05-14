@@ -1,5 +1,6 @@
 import { useTranslation,Trans } from "react-i18next";
 import mainImage from "../assets/main.jpg";
+import giftImage from "../assets/gift.jpg";
 function NoticeScreen() {
     const { t } = useTranslation();
 
@@ -25,6 +26,7 @@ function NoticeScreen() {
             {/* 특전 */}
             <div>
                 <h2>{t("notice.gift")}</h2>
+                <img src={giftImage} alt="main" className="img-main" />
                 <p>{t("notice.benefit")}</p>
                 <div className="s-txt-wrap">
                     <p className="s-txt">{t("notice.giftSub")}</p>
