@@ -2,7 +2,7 @@ export const en = {
   notice: {
     title: "Notice",
     gift:"Gift",
-    benefit: "removable stickers, label stickers",
+    benefit: "removable stickers (Random 1ea), Lettering stickers",
     giftSub: "One set per person when ordering churros or churodog menu",
     extraGift: "<bold>Wet wipes</bold> for lettering churros or orders over 10,000 KRW",
     reservation: "<b>Lettering churros are only available by reservation</b>",
