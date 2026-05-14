@@ -112,7 +112,7 @@ function NoticeScreen() {
                     components={{
                         a: (
                         <a
-                            href="https://instagram.com/kooCATbin"
+                            href="https://x.com/kooCATbin"
                             target="_blank"
                             rel="noreferrer"
                             style={{ color: "#bbb", fontWeight: "bold" }}
