@@ -15,7 +15,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
 }
-#root{height:100%; overflow: hidden;}
+#root{height:100%;}
 
 .start{
   display: flex;
