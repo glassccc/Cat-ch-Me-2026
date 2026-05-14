@@ -3,6 +3,7 @@ export const ko = {
     title: "공지사항",
     gift: "특전",
     benefit: "띠부씰 (랜덤 1종), 레터링 스티커",
+    giftWarn: "주문시 특전요청 필수 !!",
     giftSub: "모든 츄러스, 츄로도그 메뉴 주문 시 1인당 1세트 증정",
     extraGift:
     "레터링 츄러스 or 1만원 이상 구매 시 <bold>물티슈</bold> 추가 증정",

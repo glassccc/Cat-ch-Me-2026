@@ -58,8 +58,8 @@ export default function StartScreen({
   };
 
   return (
-    <div className="screen">
-      <h1>Catch the Koonyang!</h1>
+    <div className="screen start">
+      <h1 className="title">Catch the Koonyang!</h1>
 
       <p>
         POW 현빈의 생일을 맞아 오늘 하루 05/29 특별 이벤트를 진행합니다.<br/>
@@ -90,7 +90,7 @@ export default function StartScreen({
 
       <button
         onClick={onStart}
-        disabled={alreadyPlayed}
+        className="start-btn"
       >
         START
       </button>

@@ -15,6 +15,14 @@ body {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
 }
+#root{height:100%; overflow: hidden;}
+
+.start{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 .loading{
   line-height: 1.5;
   padding: 1rem 0;
@@ -33,6 +41,20 @@ body {
 }
 .screen {
   padding: 1rem;
+  height: calc(100% - 5%);
+}
+button{
+  border: 0;
+}
+.screen .title{
+  margin-top: 2rem;
+}
+.start-btn{
+  font-family:"Kirang Haerang", system-ui;
+  color: #fff;
+  background:#ff4d00;
+  padding: 1rem 2rem;
+  border-radius: 50%;
 }
 .img-main{
   width: 100%;
@@ -88,7 +110,6 @@ button {
 
   z-index: 100;
 }
-
 .lang-switch button {
   border: none;
   outline: none;
@@ -123,6 +144,7 @@ button {
 
   color: #ff4d00;
 }
+.txt-og{color: #ff4d00;}
 /* .end-txt{
     position: fixed;
     bottom: 0;

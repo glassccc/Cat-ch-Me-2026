@@ -29,6 +29,7 @@ function NoticeScreen() {
                 <img src={giftImage} alt="main" className="img-main" />
                 <p>{t("notice.benefit")}</p>
                 <div className="s-txt-wrap">
+                    <p className="s-txt txt-og">{t("notice.giftWarn")}</p>
                     <p className="s-txt">{t("notice.giftSub")}</p>
                     <p className="s-txt"><Trans
                         i18nKey="notice.extraGift"
