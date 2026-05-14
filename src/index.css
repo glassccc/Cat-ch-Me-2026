@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{ 
   margin: 0;
   padding: 0;
@@ -6,14 +8,25 @@
 }
 body {
   font-family: sans-serif;
-  color: white;
   text-align: center;
   padding-bottom: 3rem;
   word-break: keep-all;
   height: 100dvh;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+.loading{
+  line-height: 1.5;
+  padding: 1rem 0;
 }
 .theme{
   background: #222;
+  color: #fff;
+}
+.theme body{
+  font-family: "Kirang Haerang", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 .theme .end-txt{
   background: transparent;
@@ -43,6 +56,7 @@ button {
 .notice h2{
   text-transform: uppercase;
   margin-bottom: .5rem;
+  font-weight: 800;
 }
 .notice h3{
   margin-bottom: .3rem;
@@ -62,18 +76,12 @@ button {
   transform: translate(-50%);
   display: flex;
   gap: 8px;
-
   padding: 6px;
-
   border-radius: 999px;
-
   background: rgba(255, 255, 255, 0.12);
-
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-
   border: 1px solid rgba(255, 255, 255, 0.2);
-
   box-shadow:
     0 8px 12px rgba(0, 0, 0, 0.15),
     inset 0 1px 1px rgba(255, 255, 255, 0.2);
@@ -84,17 +92,12 @@ button {
 .lang-switch button {
   border: none;
   outline: none;
-
   padding: 10px 16px;
-
   border-radius: 999px;
-
   background: transparent;
-
   color: #222;
   font-size: 14px;
-  font-weight: 600;
-
+  font-weight: 800;
   cursor: pointer;
 
   transition:
@@ -120,7 +123,7 @@ button {
 
   color: #ff4d00;
 }
-.end-txt{
+/* .end-txt{
     position: fixed;
     bottom: 0;
     padding-bottom: env(safe-area-inset-bottom);
@@ -130,4 +133,8 @@ button {
     padding: 2rem 0 1rem 0;
     width: 100%;
     background: linear-gradient(transparent, #fff 50%);
+} */
+.end-txt{
+  padding: 1rem 0;
+  color: #bbb;
 }

@@ -134,7 +134,7 @@ export default function GameScreen({
     }
   };
   if (!imageLoaded) {
-    return <div>Loading...</div>;
+    return <div className="loading">Loading...</div>;
   }
   return (
     <div className="screen">
