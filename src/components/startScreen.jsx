@@ -64,7 +64,7 @@ export default function StartScreen({
       <p>
         POW 현빈의 생일을 맞아 오늘 하루 05/29 특별 이벤트를 진행합니다.<br/>
         <span className="sub-txt">
-          A special event is being held to celebrate POW Hyunbin’s birthday (Today only, 05/29).
+          A special event is being held to celebrate<br/>POW Hyunbin’s birthday (Today only, 05/29).
         </span>
       </p>
 
@@ -80,11 +80,11 @@ export default function StartScreen({
       </p>
 
       <p>
-        숨은 구냥이 3마리를 모두 찾아 보세요.<br/>
-        <span className="sub-txt">Find all 3 hidden koonyang!</span>
+        지구인들 사이에 숨은 <span className="txt-og">구냥이 3마리</span>를 모두 찾아 보세요 !<br/>
+        <span className="sub-txt">Find all 3 hidden koonyang !</span>
       </p>
 
-      <p>오답 3번이면 실패!<br />
+      <p>오답 3번이면 실패<br />
         <span className="sub-txt">Fail after 3 wrong taps</span>
       </p>
 
