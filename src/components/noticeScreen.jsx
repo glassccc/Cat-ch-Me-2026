@@ -97,6 +97,14 @@ function NoticeScreen() {
                             }}
                             />
                         </p>
+                        <p>
+                            <Trans
+                            i18nKey="event.hashtagSub"
+                            components={{
+                                b: <b />,
+                            }}
+                            />
+                        </p>
                     </li>
                     <li>
                         <h3>{t("event.onlineTitle")}</h3>
