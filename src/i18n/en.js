@@ -35,6 +35,6 @@ export const en = {
     reserve:"<a>Reserve ></a>"
   },
   common: {
-    copied: "Hashtag copied!"
+    copied: "Hashtag copied !"
   }
 };

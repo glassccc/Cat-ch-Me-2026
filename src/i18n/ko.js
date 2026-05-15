@@ -37,6 +37,6 @@ export const ko = {
     reserve: "<a>예약하기 ></a>"
   },
   common: {
-    copied: "해시태그가 복사되었습니다!"
+    copied: "해시태그가 복사되었습니다 !"
   }
 };

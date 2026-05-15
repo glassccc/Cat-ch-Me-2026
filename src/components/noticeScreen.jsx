@@ -4,7 +4,7 @@ import giftImage from "../assets/gift.jpg";
 function NoticeScreen() {
     const { t } = useTranslation();
     const copyHashtag = async () => {
-        await navigator.clipboard.writeText("#구냥이를_잡아냥");
+        await navigator.clipboard.writeText("#구냥이를_잡아냥 #HAPPY_HYUNBIN_DAY");
         alert(t("common.copied"));
     };
     return (
