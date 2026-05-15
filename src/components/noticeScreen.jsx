@@ -3,7 +3,10 @@ import mainImage from "../assets/main.jpg";
 import giftImage from "../assets/gift.jpg";
 function NoticeScreen() {
     const { t } = useTranslation();
-
+    const copyHashtag = async () => {
+        await navigator.clipboard.writeText("#구냥이를_잡아냥");
+        alert("해시태그가 복사되었습니다!");
+    };
     return (
       <>
         <div className="notice">
@@ -90,12 +93,17 @@ function NoticeScreen() {
                     <li>
                         <h3>{t("event.hashtagTitle")}</h3>
                         <p>
-                            <Trans
-                            i18nKey="event.hashtagDesc"
-                            components={{
-                                b: <b />,
-                            }}
+                        <Trans
+                        i18nKey="event.hashtagDesc"
+                        components={{
+                            b: (
+                            <b
+                                onClick={copyHashtag}
+                                style={{ cursor: "pointer" }}
                             />
+                            ),
+                        }}
+                        />
                         </p>
                         <p>
                             <Trans
