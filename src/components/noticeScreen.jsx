@@ -56,6 +56,7 @@ function NoticeScreen() {
                         }}
                         />
                     </p>
+                    <p className="s-txt">{t("notice.giftWarn2")}</p>
                     <p className="reserve-btn">
                         <Trans
                         i18nKey="event.reserve"

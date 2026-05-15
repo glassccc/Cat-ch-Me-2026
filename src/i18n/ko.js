@@ -9,6 +9,7 @@ export const ko = {
     "레터링 츄러스 or 1만원 이상 구매 시 <bold>물티슈</bold> 추가 증정",
     reservation: "<b>레터링 츄러스는 반드시 미리 예약 후 픽업만 가능</b>",
     noreserve: "일반 츄러스 메뉴는 현장 구매 가능",
+    giftWarn2: "특전은 한정수량으로 준비되어, 조기소진 가능",
     contact:
     "이벤트 관련 문의는 <a>@kooCATbin</a> 으로 DM 부탁드립니다.",
   },

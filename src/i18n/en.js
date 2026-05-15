@@ -5,6 +5,7 @@ export const en = {
     benefit: "Removable stickers (Random 1ea), Lettering stickers",
     giftWarn: "Special gift request required when placing an order!!",
     giftSub: "One set per person when ordering churros or churodog menu",
+    giftWarn2: "Benefits are available in limited quantities and may sell out early.",
     extraGift: "<bold>Wet wipes</bold> for lettering churros or orders over 10,000 KRW",
     reservation: "<b>Lettering churros are only available by reservation</b>",
     noreserve: "Regular churros menu available for purchase on-site",
