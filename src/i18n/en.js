@@ -33,5 +33,8 @@ export const en = {
     onlineDesc:
       "Scan the QR code on site to enjoy exclusive videos and photos on your mobile device",
     reserve:"<a>Reserve ></a>"
+  },
+  common: {
+    copied: "Hashtag copied!"
   }
 };

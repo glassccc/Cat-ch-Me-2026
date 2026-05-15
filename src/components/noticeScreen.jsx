@@ -5,7 +5,7 @@ function NoticeScreen() {
     const { t } = useTranslation();
     const copyHashtag = async () => {
         await navigator.clipboard.writeText("#구냥이를_잡아냥");
-        alert("해시태그가 복사되었습니다!");
+        alert(t("common.copied"));
     };
     return (
       <>
