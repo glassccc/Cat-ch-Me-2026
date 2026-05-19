@@ -26,7 +26,7 @@ export const ko = {
 
     catchTitle: "Catch the Koonyang",
     catchDesc:
-      "현장에서 큐알코드 인식 후 나타난 이미지에서<br />제한 시간 내에 숨은 구냥이를 찾아보세요.<br />구냥이를 모두 잡으면 <b>츄러스 or 커피 1개 무료 제공</b>됩니다.<br /><span>(1인 1회 참여제한)</span>",
+      "현장에서 큐알코드 인식 후 미니 게임을 통해<br />제한 시간 내에 숨은 구냥이를 찾아보세요.<br />구냥이를 모두 잡으면 <b>츄러스 or 커피 1개 무료 제공</b>됩니다.<br /><span>(1인 1회 참여제한)</span>",
 
     hashtagTitle: "Hashtag Event",
     hashtagDesc:
@@ -35,7 +35,7 @@ export const ko = {
     onlineTitle: "Online Mini Exhibition",
     onlineDesc:
       "현장에서 큐알코드 인식 후 모바일 기기를 통해<br />미공개 영상 및 사진을 감상하실 수 있습니다.",
-    reserve: "<a>예약하기 ></a>"
+    reserve: "<a>예약 ></a>"
   },
   common: {
     copied: "해시태그가 복사되었습니다 !"

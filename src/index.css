@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  line-height: 1.3;
 }
 body {
   font-family: sans-serif;
@@ -72,7 +73,7 @@ button{
 .start-btn{
   font-family:"Kirang Haerang", system-ui;
   color: #fff;
-  background:#ff4d00;
+  background:#ff7439;
   padding: 1rem 2rem;
   border-radius: 50%;
 }
@@ -107,14 +108,21 @@ button {
   margin-bottom: .5rem;
   font-weight: 800;
 }
+.notice h2::before,.notice h2::after{
+  content: '·';
+}
 .notice h3{
   margin-bottom: .3rem;
+  font-style: oblique;
 }
 .cont-list li{margin-bottom: 2rem;}
 .s-txt-wrap{
   padding: .5rem 0;
 }
-.reserve-btn a{color: #ff4d00 !important; text-decoration: underline; cursor: pointer;font-weight: 600;font-size: 1.3rem;}
+.s-txt-wrap p{
+  line-height: 1.5 !important;
+}
+.reserve-btn a{display: inline-block;background: #ff7439; color: #fff !important; padding:.5rem 1rem;border-radius: 3rem;cursor: pointer;text-decoration: none; font-weight: 600; font-size: 1.3rem; margin-top: .5rem;}
 .s-txt{font-size: .8rem !important}
 .s-txt::before{content: '*';}
 .sub-txt{color: #bbb;}
@@ -169,9 +177,9 @@ button {
     inset 0 1px 1px rgba(255, 255, 255, 0.25),
     0 4px 12px rgba(0, 0, 0, 0.12);
 
-  color: #ff4d00;
+  color: #ff7439;
 }
-.txt-og{color: #ff4d00;}
+.txt-og{color: #ff7439;}
 /* .end-txt{
     position: fixed;
     bottom: 0;

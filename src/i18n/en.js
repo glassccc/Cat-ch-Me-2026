@@ -25,7 +25,7 @@ export const en = {
 
     catchTitle: "Catch the Koonyang",
     catchDesc:
-      "Scan the QR code on site and find hidden Koonyang within the time limit.<br />If you catch them all, you will receive a <b>free churros or coffee</b> <span><br />(one participation per person)</span>",
+      "Scan the QR code on-site and play a mini game<br />to find the hidden cats within the time limit.<br />Catch all the cats to receive <b>1 free churro or coffee</b>.<br /><span>(Limited to one participation per person)</span>",
 
     hashtagTitle: "Hashtag Event",
     hashtagDesc:
