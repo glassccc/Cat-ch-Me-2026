@@ -28,12 +28,13 @@ body {
   padding: 1rem 0;
 }
 .theme{
-  background:
+  /* background:
   radial-gradient(circle at 20% 30%, rgba(120, 119, 198, 0.35), transparent 25%),
   radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.15), transparent 20%),
   radial-gradient(circle at 70% 80%, rgba(0, 180, 255, 0.2), transparent 25%),
-  linear-gradient(to bottom, #020111 0%, #050816 45%, #0b1026 75%, #030305 100%);
+  linear-gradient(to bottom, #020111 0%, #050816 45%, #0b1026 75%, #030305 100%); */
   color: #fff;
+  background: url(./assets/back.png) 100% center;
 }
 .theme::before {
   content: "";
@@ -185,4 +186,9 @@ button {
 .end-txt{
   padding: 1rem 0;
   color: #bbb;
+}
+.galaxy{
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
 }

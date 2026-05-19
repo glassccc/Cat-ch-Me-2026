@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import NoticeScreen from "./components/noticeScreen";
 import StartScreen from "./components/startScreen";
 import GameScreen from "./components/gameScreen";
+import Game2Screen from "./components/game2Screen";
 import ResultScreen from "./components/resultScreen";
 
 import { doc, getDoc, setDoc } from "firebase/firestore";
@@ -77,7 +78,12 @@ function App() {
   
     setSelectedGame(randomGame);
   
-    navigate("/game");
+    const randomRoute =
+    Math.random() < 0.5
+      ? "/game"
+      : "/game2";
+
+    navigate(randomRoute);
   };
 
   const handleSuccess = async () => {
@@ -162,6 +168,19 @@ function App() {
           path="/game"
           element={
             <GameScreen
+              gameData={selectedGame}
+              onSuccess={handleSuccess}
+              onFail={handleFail}
+              gameTime={gameTime}
+              deviceId={getDeviceId()}
+            />
+          }
+        />
+
+        <Route
+          path="/game2"
+          element={
+            <Game2Screen
               gameData={selectedGame}
               onSuccess={handleSuccess}
               onFail={handleFail}

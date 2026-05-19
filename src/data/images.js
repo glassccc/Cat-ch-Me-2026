@@ -1,6 +1,15 @@
 import game1 from "../assets/t01.jpg";
 import game2 from "../assets/t02.jpg";
 import game3 from "../assets/t03.jpg";
+import imgA from "../assets/a.png";
+import imgB from "../assets/b.png";
+import imgC from "../assets/c.png";
+
+export const movingImages = {
+  a: imgA,
+  b: imgB,
+  c: imgC,
+};
 
 export const gameImages = [
   {

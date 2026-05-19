@@ -75,8 +75,8 @@ export default function StartScreen({
           userSelect: "none",
         }}
       >
-        제한시간 {gameTime}초<br/>
-        <span className="sub-txt">Time Limit {gameTime}s</span>
+        제한시간 내에<br/>
+        <span className="sub-txt">Time Limit</span>
       </p>
 
       <p>
