@@ -96,7 +96,7 @@ function App() {
     });
 
     setSuccess(true);
-    navigate("/result");
+    navigate("/result", { replace: true });
   };
 
   const handleFail = async () => {
@@ -109,7 +109,7 @@ function App() {
     });
 
     setSuccess(false);
-    navigate("/result");
+    navigate("/result", { replace: true });
   };
 
   const restartGame = () => {
