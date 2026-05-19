@@ -14,7 +14,8 @@ export const en = {
   event: {
     titleTime: "Date",
     date: "2026.05.29 (Fri)",
-    time: "13:00 ~ 21:00",
+    time: "13:30 ~ 21:00",
+    timeSub: "Time may be adjusted.",
 
     titleLocation: "Location",
     place: "Jjunine Churros Apgujeong",

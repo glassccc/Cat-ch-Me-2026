@@ -3,7 +3,7 @@ export const ko = {
     title: "공지사항",
     gift: "특전",
     benefit: "띠부씰 (랜덤 1종), 레터링 스티커",
-    giftWarn: "주문시 특전요청 필수 !!",
+    giftWarn: "주문시 특전 요청 필수 !!",
     giftSub: "모든 츄러스, 츄로도그 메뉴 주문 시 1인당 1세트 증정",
     extraGift:
     "레터링 츄러스 or 1만원 이상 구매 시 <bold>물티슈</bold> 추가 증정",
@@ -16,8 +16,8 @@ export const ko = {
   event: {
     titleTime: "일시",
     date: "2026.05.29 (금)",
-    time: "13:00 ~ 21:00",
-
+    time: "13:30 ~ 21:00",
+    timeSub: "시간은 조정될 수 있습니다.",
     titleLocation: "주소",
     place: "쭈니네 츄러스 압구정점",
     address: "서울 강남구 도산대로51길 37",

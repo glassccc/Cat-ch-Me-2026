@@ -16,6 +16,7 @@ function NoticeScreen() {
                 <h2>{t("event.titleTime")}</h2>
                 <p>{t("event.date")}</p>
                 <p>{t("event.time")}</p>
+                <p className="s-txt">{t("event.timeSub")}</p>
             </div>
 
             {/* 주소 */}
