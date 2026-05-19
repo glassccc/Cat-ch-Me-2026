@@ -206,7 +206,7 @@ function App() {
         />
       </Routes>
 
-      <p className="end-txt">kooCATbin x 쭈니네 츄러스</p>
+      <p className="end-txt">kooCATbin x Jjunine Churros Apro</p>
     </>
   );
 }
