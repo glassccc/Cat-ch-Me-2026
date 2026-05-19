@@ -1,6 +1,7 @@
 import { useTranslation,Trans } from "react-i18next";
 import mainImage from "../assets/main.jpg";
 import giftImage from "../assets/gift.jpg";
+import letteringImg from "../assets/lettering.png";
 function NoticeScreen() {
     const { t } = useTranslation();
     const copyHashtag = async () => {
@@ -58,6 +59,7 @@ function NoticeScreen() {
                         />
                     </p>
                     <p className="s-txt">{t("notice.giftWarn2")}</p>
+                    <img src={letteringImg} alt="main" className="img-sub" />
                     <p className="reserve-btn">
                         <Trans
                         i18nKey="event.reserve"
