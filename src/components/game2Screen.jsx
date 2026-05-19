@@ -9,7 +9,7 @@ function createObjects() {
     let id = 0;
   
     // 전체 속도
-    const speed = -10;
+    const speed = 1;
   
     // 최소 속도 보장 랜덤
     const randomVelocity = () => {
@@ -17,7 +17,7 @@ function createObjects() {
         Math.random() > 0.5 ? 1 : -1;
   
       return (
-        dir * (Math.random() * speed + 6)
+        dir * (Math.random() * speed + 1.7)
       );
     };
   
