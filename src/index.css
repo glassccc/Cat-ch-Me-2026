@@ -92,7 +92,7 @@ button{
 .img-sub{
   width: 50%;
   object-fit:cover;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 button {
   padding: 12px 20px;
