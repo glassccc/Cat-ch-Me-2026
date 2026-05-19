@@ -131,7 +131,7 @@ function App() {
     loadSettings();
   }, []);
 
-  if (loading) return <div className="loading">Loading...<br/>로딩이 길면 새로고침 해주세요.</div>;
+  if (loading) return <div className="loading">먕<span>.</span><span>.</span><span>.</span><br/>로딩이 길면 새로고침 해주세요.</div>;
 
   return (
     <>
