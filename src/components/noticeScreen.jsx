@@ -7,7 +7,7 @@ import slide2 from "../assets/slide2.jpg";
 import slide3 from "../assets/slide3.jpg";
 import { useState,useEffect } from 'react';
 function NoticeScreen() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const copyHashtag = async () => {
         await navigator.clipboard.writeText("#구냥이를_잡아냥 #HAPPY_HYUNBIN_DAY");
         alert(t("common.copied"));
@@ -117,11 +117,18 @@ function NoticeScreen() {
                         components={{
                             a: (
                             <a
-                                href="https://map.naver.com/p/search/%EC%AD%88%EB%8B%88%EB%84%A4%20%EC%B8%84%EB%9F%AC%EC%8A%A4/place/1073714383?placePath=/booking?bk_query=%EC%AD%88%EB%8B%88%EB%84%A4%20%EC%B8%84%EB%9F%AC%EC%8A%A4&fromPanelNum=2&timestamp=202605121749&locale=ko&svcName=map_pcv5&searchText=%EC%AD%88%EB%8B%88%EB%84%A4%20%EC%B8%84%EB%9F%AC%EC%8A%A4&from=map&fromPanelNum=2&timestamp=202605121414&locale=ko&svcName=map_pcv5&searchText=%EC%AD%88%EB%8B%88%EB%84%A4%20%EC%B8%84%EB%9F%AC%EC%8A%A4&entry=pll&fromNxList=true&searchType=place&c=15.00,0,0,0,dh"
+                                href={
+                                i18n.language === "ko"
+                                    ? "https://m.booking.naver.com/booking/6/bizes/1109776/items/5879701?area=pll&lang=ko&startDate=2026-05-29&theme=place"
+                                    : "https://m.booking.naver.com/booking/6/bizes/1109776/items/5879701?area=pll&lang=en&startDate=2026-05-29&theme=place"
+                                }
                                 target="_blank"
                                 rel="noreferrer"
                                 className="reserve-btn"
-                                style={{ color: "#bbb", fontWeight: "bold" }}
+                                style={{
+                                color: "#bbb",
+                                fontWeight: "bold",
+                                }}
                             />
                             ),
                         }}
