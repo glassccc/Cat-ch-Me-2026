@@ -228,9 +228,12 @@ function NoticeScreen() {
                                     className="slide-img"
                                 />
                             </div>
-                            <p className="slide-des">
-                                {slideDescriptions[current]}
-                            </p>
+                            <p
+                            className="slide-des"
+                            dangerouslySetInnerHTML={{
+                                __html: slideDescriptions[current],
+                            }}
+                            />
                         </div>
                         {/* 페이지 표시 */}
                         <p className="slide-page">

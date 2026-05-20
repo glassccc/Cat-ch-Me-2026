@@ -1,7 +1,7 @@
 export const en = {
   notice: {
     title: "Notice",
-    gift:"Special Gift",
+    gift:"Special Gifts",
     benefit: "Removable stickers (Random 1ea), Lettering stickers",
     giftWarn: "Special gift request required when placing an order!!",
     giftSub: "One set per person when ordering churros or churodog menu",
@@ -36,7 +36,7 @@ export const en = {
       "Scan the QR code on site to enjoy exclusive videos and photos on your mobile device",
     reserve:"<a>Reserve ></a>",
     reserveQ:"<a>Guide</a>",
-    reserveSlide1: "Select churros quantity, pickup date (May 29), and pickup time",
+    reserveSlide1: "Select the churros quantity (number of people), pickup date (May 29), and pickup time.<br/>*You must pick up on May 29 to receive the birthday Special Gifts.",
     reserveSlide2: "Choose the number of letters you want (ex.'꾸냥' is 두글자)",
     reserveSlide3: "Enter the custom text and dough color, then complete payment to finish reservation"
   },

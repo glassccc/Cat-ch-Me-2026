@@ -302,6 +302,7 @@ button {
 }
 .slide-des{
   margin-top: 1rem;
+  font-size: .8rem !important;
 }
 .slide-btn {
   width: 50px;
