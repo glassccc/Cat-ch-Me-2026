@@ -35,7 +35,7 @@ export const ko = {
     onlineTitle: "Online Mini Exhibition",
     onlineDesc:
       "현장에서 큐알코드 인식 후 모바일 기기를 통해<br />미공개 영상 및 사진을 감상하실 수 있습니다.",
-    reserve: "<a>예약 ></a>",
+    reserve: "<a>예약하기 ></a>",
     reserveQ: "<a>예약방법</a>",
     reserveSlide1: "츄러스 개수(인원), 픽업날짜 5/29일, 픽업시간 선택",
     reserveSlide2: "원하시는 글자수 선택",

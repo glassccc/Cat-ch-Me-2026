@@ -65,6 +65,7 @@ function NoticeScreen() {
                             bold: <b />,
                         }}
                     /></p>
+                    <p className="s-txt">{t("notice.giftWarn2")}</p>
                     <p className="s-txt">
                         <Trans
                         i18nKey="notice.reservation"
@@ -81,7 +82,6 @@ function NoticeScreen() {
                         }}
                         />
                     </p>
-                    <p className="s-txt">{t("notice.giftWarn2")}</p>
                     <img src={letteringImg} alt="main" className="img-sub" />
                     <p className="reserve-btn-wrap">
                     <Trans
@@ -92,6 +92,7 @@ function NoticeScreen() {
                                 href="#"
                                 onClick={(e) => {
                                     e.preventDefault();
+                                    setCurrent(0);
                                     setIsOpen(true);
                                 }}
                                 className="reserve-q-btn"
