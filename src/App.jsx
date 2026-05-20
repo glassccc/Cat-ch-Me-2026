@@ -38,6 +38,43 @@ function App() {
       document.documentElement.classList.remove("theme");
     };
   }, [location.pathname]);
+
+  useEffect(() => {
+    const blockedPages = [
+      "/game",
+      "/game2",
+      "/result",
+    ];
+  
+    const shouldBlock =
+      blockedPages.includes(location.pathname);
+  
+    if (!shouldBlock) return;
+  
+    // history 추가
+    window.history.pushState(
+      null,
+      "",
+      window.location.href
+    );
+  
+    const handleBack = () => {
+      window.history.pushState(
+        null,
+        "",
+        window.location.href
+      );
+    };
+  
+    window.addEventListener("popstate", handleBack);
+  
+    return () => {
+      window.removeEventListener(
+        "popstate",
+        handleBack
+      );
+    };
+  }, [location.pathname]);
   const getDeviceId = () => {
     let id = localStorage.getItem("device_id");
 
@@ -83,7 +120,7 @@ function App() {
       ? "/game"
       : "/game2";
 
-    navigate(randomRoute);
+      navigate(randomRoute, { replace: true });
   };
 
   const handleSuccess = async () => {
