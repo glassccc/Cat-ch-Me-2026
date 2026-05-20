@@ -5,7 +5,7 @@ import letteringImg from "../assets/lettering.png";
 import slide1 from "../assets/slide1.jpg";
 import slide2 from "../assets/slide2.jpg";
 import slide3 from "../assets/slide3.jpg";
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 function NoticeScreen() {
     const { t } = useTranslation();
     const copyHashtag = async () => {
@@ -31,6 +31,17 @@ function NoticeScreen() {
           setCurrent(current + 1);
         }
     };
+    useEffect(() => {
+        if (isOpen) {
+          document.body.style.overflow = "hidden";
+        } else {
+          document.body.style.overflow = "auto";
+        }
+      
+        return () => {
+          document.body.style.overflow = "auto";
+        };
+    }, [isOpen]);
     return (
       <>
         <div className="notice">
