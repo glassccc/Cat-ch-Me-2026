@@ -134,6 +134,7 @@ function NoticeScreen() {
                         }}
                         />
                     </p>
+                    <p className="s-txt">{t("notice.dmreserve")}</p>
                 </div>
             </div>
 

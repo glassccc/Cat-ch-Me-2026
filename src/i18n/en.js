@@ -9,6 +9,7 @@ export const en = {
     extraGift: "<bold>Wet wipes</bold> for lettering churros or orders over 10,000 KRW",
     reservation: "<b>Lettering churros are only available by reservation</b>",
     noreserve: "Regular churros menu available for purchase on-site",
+    dmreserve: "If you're having trouble making a reservation, please send us a DM.",
     contact: "DM <a>@kooCATbin</a> for inquiries",
   },
   event: {
