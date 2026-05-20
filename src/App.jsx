@@ -51,7 +51,7 @@ function App() {
   
     if (!shouldBlock) return;
   
-    // history 추가
+    // 현재 페이지를 history에 다시 넣음
     window.history.pushState(
       null,
       "",
@@ -59,6 +59,8 @@ function App() {
     );
   
     const handleBack = () => {
+  
+      // 뒤로가기 눌러도 다시 현재 페이지 유지
       window.history.pushState(
         null,
         "",
@@ -66,7 +68,10 @@ function App() {
       );
     };
   
-    window.addEventListener("popstate", handleBack);
+    window.addEventListener(
+      "popstate",
+      handleBack
+    );
   
     return () => {
       window.removeEventListener(
@@ -75,6 +80,7 @@ function App() {
       );
     };
   }, [location.pathname]);
+
   const getDeviceId = () => {
     let id = localStorage.getItem("device_id");
 
