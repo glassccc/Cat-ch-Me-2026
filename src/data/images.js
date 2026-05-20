@@ -26,7 +26,7 @@ export const gameImages = [
     src: game2,
     answers: [
       { x: 43.6, y: 51 },
-      { x: 36.5, y: 57 },
+      { x: 71.2, y: 50 },
       { x: 4, y: 86 },
     ],
   },
