@@ -34,7 +34,11 @@ export const en = {
     onlineTitle: "Online Mini Exhibition",
     onlineDesc:
       "Scan the QR code on site to enjoy exclusive videos and photos on your mobile device",
-    reserve:"<a>Reserve ></a>"
+    reserve:"<a>Reserve ></a>",
+    reserveQ:"<a>Guide</a>",
+    reserveSlide1: "Select churros quantity, pickup date (May 29), and pickup time",
+    reserveSlide2: "Choose the number of letters you want (ex.'꾸냥' is 두글자)",
+    reserveSlide3: "Enter the custom text and dough color, then complete payment to finish reservation"
   },
   common: {
     copied: "Hashtag copied !"

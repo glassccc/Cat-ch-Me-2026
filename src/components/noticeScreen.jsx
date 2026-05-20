@@ -14,7 +14,11 @@ function NoticeScreen() {
     };
     const [isOpen, setIsOpen] = useState(false);
     const [current, setCurrent] = useState(0);
-
+    const slideDescriptions = [
+        t("event.reserveSlide1"),
+        t("event.reserveSlide2"),
+        t("event.reserveSlide3"),
+      ];
     const slides = [slide1, slide2, slide3];
     const prevSlide = () => {
         if (current > 0) {
@@ -181,8 +185,8 @@ function NoticeScreen() {
             </div>
             {isOpen && (
                     <div
-                    className="popup-overlay"
-                    onClick={() => setIsOpen(false)}
+                        className="popup-overlay"
+                        onClick={() => setIsOpen(false)}
                     >
                     <div
                         className="slide-popup"
@@ -198,11 +202,16 @@ function NoticeScreen() {
 
                         {/* 슬라이드 */}
                         <div className="slide-wrap">
-                        <img
-                            src={slides[current]}
-                            alt={`slide-${current}`}
-                            className="slide-img"
-                        />
+                            <div className="slide-img-wrap">
+                                <img
+                                    src={slides[current]}
+                                    alt={`slide-${current}`}
+                                    className="slide-img"
+                                />
+                            </div>
+                            <p className="slide-des">
+                                {slideDescriptions[current]}
+                            </p>
                         </div>
                         {/* 페이지 표시 */}
                         <p className="slide-page">
