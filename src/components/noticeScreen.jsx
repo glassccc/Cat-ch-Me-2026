@@ -2,6 +2,7 @@ import { useTranslation,Trans} from "react-i18next";
 import mainImage from "../assets/main.jpg";
 import giftImage from "../assets/gift.jpg";
 import letteringImg from "../assets/lettering.png";
+import gameImg from "../assets/game.jpg";
 import slide1 from "../assets/slide1.jpg";
 import slide2 from "../assets/slide2.jpg";
 import slide3 from "../assets/slide3.jpg";
@@ -144,6 +145,7 @@ function NoticeScreen() {
                 <ul className="cont-list">
                     <li>
                         <h3>{t("event.catchTitle")}</h3>
+                        <img src={gameImg} alt="main" className="img-main" />
                         <p>
                             <Trans
                             i18nKey="event.catchDesc"

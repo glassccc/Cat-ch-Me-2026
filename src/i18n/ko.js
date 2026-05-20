@@ -27,7 +27,7 @@ export const ko = {
 
     catchTitle: "Catch the Koonyang",
     catchDesc:
-      "현장에서 큐알코드 인식 후 미니 게임을 통해<br />제한 시간 내에 숨은 구냥이를 찾아보세요.<br />구냥이를 모두 잡으면 <b>츄러스 or 커피 1개 무료 제공</b>됩니다.<br /><span>(1인 1회 참여제한)</span>",
+      "현장에서 큐알코드 인식 후 미니 게임을 통해<br />제한 시간 내에 구냥이를 잡아보세요.<br />구냥이를 모두 잡으면 <b>츄러스 or 커피 1개 무료 제공</b>됩니다.<br /><span>(1인 1회 참여제한)</span>",
 
     hashtagTitle: "Hashtag Event",
     hashtagDesc:
