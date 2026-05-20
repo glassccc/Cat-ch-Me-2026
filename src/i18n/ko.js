@@ -38,7 +38,7 @@ export const ko = {
     reserve: "<a>예약하기 ></a>",
     reserveQ: "<a>예약방법</a>",
     reserveSlide1: "츄러스 개수(인원), 픽업날짜 5/29일, 픽업시간 선택",
-    reserveSlide2: "원하시는 글자수 선택",
+    reserveSlide2: "원하는 글자수 선택",
     reserveSlide3: "제작문구, 반죽 색깔 입력 후 선결제하면 예약완료"
   },
   common: {
