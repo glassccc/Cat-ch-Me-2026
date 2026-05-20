@@ -128,6 +128,7 @@ button {
 .s-txt-wrap p{
   line-height: 1.5 !important;
 }
+.not-found{display: flex;height: 100%;align-items: center;justify-content: center;font-size: 1.2rem;}
 .reserve-btn-wrap{display: flex;align-items: center;justify-content: center; overflow: hidden;margin: .5rem auto;width: 70%;}
 .reserve-btn-wrap a{flex: 1;display: inline-block;padding:1rem;cursor: pointer;text-decoration: none; font-weight: 600; font-size: 1rem}
 .reserve-q-btn{border:1px solid #bbb;color: #bbb;background: transparent;overflow: hidden;border-radius: 3rem 0 0 3rem;}

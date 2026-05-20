@@ -191,6 +191,14 @@ function App() {
       )}
       <Routes>
         <Route
+          path="*"
+          element={
+            <div className="not-found">
+              여기가 어디징 ..
+            </div>
+          }
+        />
+        <Route
           path="/"
           element={
             <StartScreen

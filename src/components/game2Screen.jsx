@@ -227,8 +227,9 @@ export default function Game2Screen({
             }}
           >
             구냥이를 3마리 잡으세요 !
+            
           </h1>
-
+          <span className="sub-txt">Catch the 3 koonyang !</span>
           <img
             src={TYPES[answerType]}
             alt=""
