@@ -1,12 +1,31 @@
-import { useTranslation,Trans } from "react-i18next";
+import { useTranslation,Trans} from "react-i18next";
 import mainImage from "../assets/main.jpg";
 import giftImage from "../assets/gift.jpg";
 import letteringImg from "../assets/lettering.png";
+import slide1 from "../assets/slide1.jpg";
+import slide2 from "../assets/slide2.jpg";
+import slide3 from "../assets/slide3.jpg";
+import { useState } from 'react';
 function NoticeScreen() {
     const { t } = useTranslation();
     const copyHashtag = async () => {
         await navigator.clipboard.writeText("#구냥이를_잡아냥 #HAPPY_HYUNBIN_DAY");
         alert(t("common.copied"));
+    };
+    const [isOpen, setIsOpen] = useState(false);
+    const [current, setCurrent] = useState(0);
+
+    const slides = [slide1, slide2, slide3];
+    const prevSlide = () => {
+        if (current > 0) {
+          setCurrent(current - 1);
+        }
+      };
+      
+      const nextSlide = () => {
+        if (current < slides.length - 1) {
+          setCurrent(current + 1);
+        }
     };
     return (
       <>
@@ -60,7 +79,23 @@ function NoticeScreen() {
                     </p>
                     <p className="s-txt">{t("notice.giftWarn2")}</p>
                     <img src={letteringImg} alt="main" className="img-sub" />
-                    <p className="reserve-btn">
+                    <p className="reserve-btn-wrap">
+                    <Trans
+                        i18nKey="event.reserveQ"
+                        components={{
+                            a: (
+                            <a
+                                href="#"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setIsOpen(true);
+                                }}
+                                className="reserve-q-btn"
+                                style={{ color: "#bbb", fontWeight: "bold" }}
+                            />
+                            ),
+                        }}
+                        />
                         <Trans
                         i18nKey="event.reserve"
                         components={{
@@ -69,6 +104,7 @@ function NoticeScreen() {
                                 href="https://map.naver.com/p/search/%EC%AD%88%EB%8B%88%EB%84%A4%20%EC%B8%84%EB%9F%AC%EC%8A%A4/place/1073714383?placePath=/booking?bk_query=%EC%AD%88%EB%8B%88%EB%84%A4%20%EC%B8%84%EB%9F%AC%EC%8A%A4&fromPanelNum=2&timestamp=202605121749&locale=ko&svcName=map_pcv5&searchText=%EC%AD%88%EB%8B%88%EB%84%A4%20%EC%B8%84%EB%9F%AC%EC%8A%A4&from=map&fromPanelNum=2&timestamp=202605121414&locale=ko&svcName=map_pcv5&searchText=%EC%AD%88%EB%8B%88%EB%84%A4%20%EC%B8%84%EB%9F%AC%EC%8A%A4&entry=pll&fromNxList=true&searchType=place&c=15.00,0,0,0,dh"
                                 target="_blank"
                                 rel="noreferrer"
+                                className="reserve-btn"
                                 style={{ color: "#bbb", fontWeight: "bold" }}
                             />
                             ),
@@ -143,6 +179,57 @@ function NoticeScreen() {
                     />
                 </p>
             </div>
+            {isOpen && (
+                    <div
+                    className="popup-overlay"
+                    onClick={() => setIsOpen(false)}
+                    >
+                    <div
+                        className="slide-popup"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        {/* 닫기 */}
+                        <button
+                        className="popup-close"
+                        onClick={() => setIsOpen(false)}
+                        >
+                        ✕
+                        </button>
+
+                        {/* 슬라이드 */}
+                        <div className="slide-wrap">
+                        <img
+                            src={slides[current]}
+                            alt={`slide-${current}`}
+                            className="slide-img"
+                        />
+                        </div>
+                        {/* 페이지 표시 */}
+                        <p className="slide-page">
+                            {/* 좌우 버튼 */}
+                            <button
+                            className="slide-btn left"
+                            onClick={prevSlide}
+                            disabled={current === 0}
+                            >
+                            &lt;
+                            </button>
+
+                            <span className="slide-page">
+                            {current + 1} / {slides.length}
+                            </span>
+
+                            <button
+                            className="slide-btn right"
+                            onClick={nextSlide}
+                            disabled={current === slides.length - 1}
+                            >
+                            &gt;
+                            </button>
+                        </p>
+                    </div>
+                    </div>
+                )}
         </div>
       </>
     );

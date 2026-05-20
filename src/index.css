@@ -128,7 +128,10 @@ button {
 .s-txt-wrap p{
   line-height: 1.5 !important;
 }
-.reserve-btn a{display: inline-block;background: #ff7439; color: #fff !important; padding:.5rem 1rem;border-radius: 3rem;cursor: pointer;text-decoration: none; font-weight: 600; font-size: 1.3rem; margin-top: .5rem;}
+.reserve-btn-wrap{display: flex;align-items: center;justify-content: center; overflow: hidden;margin: 0 auto;margin-top: .5rem;width: 80%;}
+.reserve-btn-wrap a{flex: 1;display: inline-block;padding:1rem;cursor: pointer;text-decoration: none; font-weight: 600; font-size: 1.3rem}
+.reserve-q-btn{border:1px solid #bbb;color: #bbb;background: transparent;overflow: hidden;border-radius: 3rem 0 0 3rem;}
+.reserve-btn{background: #ff7439; color: #fff !important;border:1px solid #ff7439;border-radius: 0 3rem 3rem 0;}
 .s-txt{font-size: .8rem !important}
 .s-txt::before{content: '*';}
 .sub-txt{color: #bbb;}
@@ -251,4 +254,78 @@ button {
   100% {
     opacity: 0;
   }
+}
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.slide-popup {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  height: 90vh;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.slide-wrap {
+  position: relative;
+  overflow: auto;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.slide-img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+.slide-btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0 !important;
+}
+
+.slide-btn.left {
+  left: 10px;
+}
+
+.slide-btn.right {
+  right: 10px;
+}
+.slide-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.slide-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 12px;
 }
