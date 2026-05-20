@@ -68,7 +68,7 @@ export default function Game2Screen({
     useState(false);
 
   const [timeLeft, setTimeLeft] =
-    useState(200);
+    useState(gameTime);
 
   const [objects, setObjects] =
     useState([]);
