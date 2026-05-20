@@ -292,10 +292,11 @@ button {
   height: 90%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .slide-img {
-  width: 100%;
+  width: 80%;
   border-radius: 12px;
   display: block;
 }
