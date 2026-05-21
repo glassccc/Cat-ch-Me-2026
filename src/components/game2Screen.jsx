@@ -250,7 +250,7 @@ export default function Game2Screen({
               marginBottom: 24,
             }}
           >
-            구냥이를 3마리 잡으세요 !
+            구냥이를 3마리 잡아요 !
             
           </h1>
           <span className="sub-txt">Catch the 3 koonyang !</span>
@@ -318,28 +318,28 @@ export default function Game2Screen({
         />
       ))}
       {wrongEffects.map((effect) => (
-        <div
-          key={effect.id}
-          style={{
-            position: "absolute",
-            left: effect.x,
-            top: effect.y,
+          <div
+            key={effect.id}
+            style={{
+              position: "absolute",
+              left: effect.x,
+              top: effect.y,
 
-            transform:
-              "translate(-50%, -50%)",
+              transform:
+                "translate(-50%, -50%)",
 
-            color: "#ff7439",
-            fontSize: 48,
-            fontWeight: "bold",
+              color: "#ff7439",
+              fontSize: 48,
+              fontWeight: "bold",
 
-            pointerEvents: "none",
+              pointerEvents: "none",
 
-            animation:
-              "wrongPop 0.5s ease forwards",
-          }}
-        >
-          ✕
-        </div>
+              animation:
+                "wrongPop 0.5s ease forwards",
+            }}
+          >
+            ✕
+          </div>
       ))}
     </div>
   );
