@@ -67,6 +67,9 @@ export default function Game2Screen({
   const [gameStarted, setGameStarted] =
     useState(false);
 
+  const [wrongEffects, setWrongEffects] =
+  useState([]);
+
   const [timeLeft, setTimeLeft] =
     useState(gameTime);
 
@@ -82,18 +85,19 @@ export default function Game2Screen({
   const [answerType, setAnswerType] =
     useState(getRandomAnswerType);
   const animationRef = useRef();
+  const [ready, setReady] = useState(false);
 
   // ===== 게임 시작 시 오브젝트 생성 =====
   useEffect(() => {
     if (!gameStarted) return;
+
+    const created = createObjects(answerType);
   
-    // const types = ["a", "b", "c"];
+    setObjects(created);
   
-    // const randomType =
-    //   types[Math.floor(Math.random() * types.length)];
-  
-    // setAnswerType(randomType);
-  
+    requestAnimationFrame(() => {
+      setReady(true);
+    });
     setObjects(createObjects(answerType));
   }, [gameStarted]);
 
@@ -126,10 +130,13 @@ export default function Game2Screen({
           let nvx = obj.vx;
           let nvy = obj.vy;
 
-          if (
-            nx <= 0 ||
-            nx >= window.innerWidth - obj.size
-          ) {
+          if (nx <= 0) {
+            nx = 0;
+            nvx *= -1;
+          }
+          
+          if (nx >= window.innerWidth - obj.size) {
+            nx = window.innerWidth - obj.size;
             nvx *= -1;
           }
 
@@ -171,7 +178,7 @@ export default function Game2Screen({
     ];
   }
   // ===== 클릭 처리 =====
-  const handleObjectClick = (obj) => {
+  const handleObjectClick = (obj, e) => {
     navigator.vibrate?.(50);
 
     // 정답
@@ -195,6 +202,23 @@ export default function Game2Screen({
       const next = wrongCount + 1;
 
       setWrongCount(next);
+
+      const effectId = Date.now();
+
+      setWrongEffects((prev) => [
+        ...prev,
+        {
+          id: effectId,
+          x: e.clientX,
+          y: e.clientY,
+        },
+      ]);
+
+      setTimeout(() => {
+        setWrongEffects((prev) =>
+          prev.filter((v) => v.id !== effectId)
+        );
+      }, 500);
 
       if (next >= 3) {
         onFail();
@@ -244,6 +268,7 @@ export default function Game2Screen({
           <button
           className="start-btn"
           onClick={() => {
+            setReady(false);
             setGameStarted(true);
           }}
           >
@@ -262,14 +287,15 @@ export default function Game2Screen({
       </div>
 
       {/* ===== 움직이는 PNG ===== */}
-      {objects.map((obj) => (
+      {ready &&
+      objects.map((obj) => (
         <img
           key={obj.id}
           src={TYPES[obj.type]}
           alt=""
           draggable={false}
-          onClick={() =>
-            handleObjectClick(obj)
+          onClick={(e) =>
+            handleObjectClick(obj,e)
           }
           style={{
             position: "absolute",
@@ -290,6 +316,30 @@ export default function Game2Screen({
               "transform 0.1s linear",
           }}
         />
+      ))}
+      {wrongEffects.map((effect) => (
+        <div
+          key={effect.id}
+          style={{
+            position: "absolute",
+            left: effect.x,
+            top: effect.y,
+
+            transform:
+              "translate(-50%, -50%)",
+
+            color: "#ff7439",
+            fontSize: 48,
+            fontWeight: "bold",
+
+            pointerEvents: "none",
+
+            animation:
+              "wrongPop 0.5s ease forwards",
+          }}
+        >
+          ✕
+        </div>
       ))}
     </div>
   );

@@ -348,3 +348,25 @@ button {
   text-align: center;
   margin-top: 12px;
 }
+@keyframes wrongPop {
+  0% {
+    opacity: 0;
+    transform:
+      translate(-50%, -50%)
+      scale(0.5);
+  }
+
+  20% {
+    opacity: 1;
+    transform:
+      translate(-50%, -50%)
+      scale(1.2);
+  }
+
+  100% {
+    opacity: 0;
+    transform:
+      translate(-50%, -80%)
+      scale(1);
+    }
+}
