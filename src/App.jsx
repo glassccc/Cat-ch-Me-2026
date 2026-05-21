@@ -2,6 +2,7 @@ import { useState, useEffect,useRef } from "react";
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import NoticeScreen from "./components/noticeScreen";
+import TarotScreen from "./components/tarotScreen";
 import StartScreen from "./components/startScreen";
 import GameScreen from "./components/gameScreen";
 import Game2Screen from "./components/game2Screen";
@@ -26,7 +27,7 @@ function App() {
   const [selectedGame, setSelectedGame] = useState(null);
   useEffect(() => {
     const isNotice = location.pathname === "/notice";
-  
+
     if (!isNotice) {
       document.documentElement.classList.add("theme");
     } else {
@@ -250,7 +251,12 @@ function App() {
             />
           }
         />
-
+        <Route
+          path="/tarot"
+          element={
+            <TarotScreen />
+          }
+        />
         <Route
           path="/notice"
           element={<NoticeScreen onRestart={restartGame} />}

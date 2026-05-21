@@ -370,3 +370,48 @@ button {
       scale(1);
     }
 }
+
+
+.deck {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.deck-card {
+  position: absolute;
+  width: 33%;
+  border-radius: 18px;
+  cursor: pointer;
+  box-shadow:
+    0 10px 20px
+    rgba(0,0,0,0.2);
+  left: 1rem;
+}
+.tarot-wrap {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.tarot-result img {
+  width: 260px;
+  filter: drop-shadow(
+    0 10px 20px rgba(0,0,0,0.2)
+  );
+}
+
+.tarot-wrap button {
+  padding: 14px 28px;
+  border-radius: 12px;
+  border: none;
+  background: #f59e0b;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
