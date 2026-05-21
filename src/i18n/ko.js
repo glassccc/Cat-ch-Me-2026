@@ -31,8 +31,8 @@ export const ko = {
 
     hashtagTitle: "Hashtag Event",
     hashtagDesc:
-      "방문 후기를 남겨주시면 추첨을 통해 선물을 드립니다.<br /><b>#구냥이를_잡아냥</b>",
-      hashtagSub: "아쉽게 방문하지 못하는 분들은 kooCATbin의 사진을 첨부하여 현빈이의 생일축하 메시지를 해시태그와 함께 포스트 해주세요 !",
+      "방문 후기를 남겨주시면 추첨을 통해 현빈 싸인 폴라로이드를 드립니다.<br /><b>#구냥이를_잡아냥</b>",
+      hashtagSub: "아쉽게 방문하지 못할 경우 kooCATbin의 사진을 첨부하여 현빈이의 생일축하 메시지를 해시태그와 함께 포스트 시 참여완료 !",
     onlineTitle: "Online Mini Exhibition",
     onlineDesc:
       "현장에서 큐알코드 인식 후 모바일 기기를 통해<br />미공개 영상 및 사진을 감상하실 수 있습니다.",

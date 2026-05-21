@@ -30,7 +30,7 @@ export const en = {
 
     hashtagTitle: "Hashtag Event",
     hashtagDesc:
-      "Leave a visit review and win prizes through a raffle.<br /><b>#구냥이를_잡아냥</b>",
+      "Leave a review of your visit for a chance to win a signed Polaroid from Hyunbin through a raffle.<br /><b>#구냥이를_잡아냥</b>",
     hashtagSub: "If you can’t visit, post your favorite kooCATbin photo and a birthday message with the hashtag !",
     onlineTitle: "Online Mini Exhibition",
     onlineDesc:
