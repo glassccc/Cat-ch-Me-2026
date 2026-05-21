@@ -37,6 +37,7 @@ body {
   linear-gradient(to bottom, #020111 0%, #050816 45%, #0b1026 75%, #030305 100%); */
   color: #fff;
   background: url(./assets/back.png) 100% center;
+  background-size: cover;
 }
 .theme::before {
   content: "";
