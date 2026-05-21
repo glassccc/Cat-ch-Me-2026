@@ -42,6 +42,7 @@ export const en = {
     reserveSlide3: "Enter the custom text and dough color, then complete payment to finish reservation"
   },
   common: {
-    copied: "Hashtag copied !"
+    copied: "Hashtag copied !",
+    share: "Share to Link"
   }
 };

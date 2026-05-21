@@ -212,6 +212,16 @@ button {
   overflow: hidden;
   position: relative;
 }
+.share-wrap{
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.share-btn img{
+  width: 20px;
+  margin-right: .5rem;
+  vertical-align: middle;
+}
 .big-title{
   font-size: 6rem;
   font-family: "Sunflower", sans-serif;

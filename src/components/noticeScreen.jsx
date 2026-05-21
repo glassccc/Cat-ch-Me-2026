@@ -3,6 +3,7 @@ import mainImage from "../assets/main.jpg";
 import giftImage from "../assets/gift.jpg";
 import letteringImg from "../assets/lettering.png";
 import gameImg from "../assets/game.jpg";
+import shareImg from "../assets/share.png";
 import slide1 from "../assets/slide1.jpg";
 import slide2 from "../assets/slide2.jpg";
 import slide3 from "../assets/slide3.jpg";
@@ -13,6 +14,26 @@ function NoticeScreen() {
         await navigator.clipboard.writeText("#구냥이를_잡아냥 #HAPPY_HYUNBIN_DAY");
         alert(t("common.copied"));
     };
+    const shareEvent = async () => {
+        const shareData = {
+          title: "HAPPY HYUNBIN DAY",
+          text: "구냥이를 잡아냥 이벤트 참여하기!",
+          url: window.location.href,
+        };
+      
+        try {
+          // 모바일 공유
+          if (navigator.share) {
+            await navigator.share(shareData);
+          } else {
+            // fallback: 링크 복사
+            await navigator.clipboard.writeText(window.location.href);
+            alert(t("common.copied"));
+          }
+        } catch (err) {
+          console.log(err);
+        }
+      };
     const [isOpen, setIsOpen] = useState(false);
     const [current, setCurrent] = useState(0);
     const slideDescriptions = [
@@ -204,6 +225,20 @@ function NoticeScreen() {
                     }}
                     />
                 </p>
+                
+                <div className="share-wrap">
+                    <a
+                        className="share-btn"
+                        onClick={shareEvent}
+                    >
+                        <img
+                            src={shareImg}
+                            alt="share"
+                            className="slide-img"
+                        />
+                        {t("common.share")}
+                    </a>
+                </div>
             </div>
             {isOpen && (
                     <div

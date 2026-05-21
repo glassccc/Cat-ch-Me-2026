@@ -43,6 +43,7 @@ export const ko = {
     reserveSlide3: "제작문구, 반죽 색깔 입력 후 선결제하면 예약완료"
   },
   common: {
-    copied: "해시태그가 복사되었습니다 !"
+    copied: "해시태그가 복사되었습니다 !",
+    share: "공유하기"
   }
 };
