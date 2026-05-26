@@ -141,8 +141,8 @@ function NoticeScreen() {
                             <a
                                 href={
                                 i18n.language === "ko"
-                                    ? "https://m.booking.naver.com/booking/6/bizes/1109776/items/6742711?area=pll&lang=ko&startDate=2026-05-22&theme=place"
-                                    : "https://m.booking.naver.com/booking/6/bizes/1109776/items/6742711?area=pll&lang=en&startDate=2026-05-22&theme=place"
+                                    ? "https://m.booking.naver.com/booking/6/bizes/1109776/items/6742711?area=pll&lang=ko&startDate=2026-05-29&theme=place"
+                                    : "https://m.booking.naver.com/booking/6/bizes/1109776/items/6742711?area=pll&lang=en&startDate=2026-05-29&theme=place"
                                 }
                                 target="_blank"
                                 rel="noreferrer"
