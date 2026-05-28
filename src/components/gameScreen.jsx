@@ -6,7 +6,7 @@ export default function GameScreen({
   onFail,
   gameTime
 }) {
-  const [timeLeft, setTimeLeft] = useState(gameTime);
+  const [timeLeft, setTimeLeft] = useState(10);
   const [imageLoaded, setImageLoaded] = useState(false);
   // 찾은 정답 저장
   const [found, setFound] = useState([]);
