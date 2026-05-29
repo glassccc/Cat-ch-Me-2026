@@ -42,6 +42,12 @@ export default function TarotResult({
             ? selected.reverseMeaningKo
             : selected.meaningKo}
         </p>
+
+        <p>
+        {selected.reversed
+            ? selected.reverseMeaningEn
+            : selected.meaningEn}
+        </p>
     </motion.div>
   );
 }
